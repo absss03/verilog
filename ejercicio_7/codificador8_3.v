@@ -7,7 +7,7 @@ module codificador (
         case (a_i)
             8'h00 : y_o =  3'b000;
             8'h01 : y_o =  3'b001;
-            8'h02: y_o =   3'b010;
+            8'h02 : y_o =  3'b010;
             8'h04 : y_o =  3'b011;
             8'h08 : y_o =  3'b100;
             8'h10 : y_o =  3'b101;

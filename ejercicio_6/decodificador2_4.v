@@ -1,5 +1,5 @@
 module decodificador (
-    input         [1:0]a_i,
+    input     wire    [1:0]a_i,
     output    reg [3:0]y_o
 );
     

@@ -6,9 +6,9 @@ module modulo_mux (
 );
     always @(*) begin
         case (sel_i)
-            1'b0 : y_o = a;
-            1'b1 : y_o = b;
-            default: y_o = a;
+            1'b0 : y_o = a_i;
+            1'b1 : y_o = b_i;
+            default: y_o = a_i;
         endcase
     end
 endmodule
