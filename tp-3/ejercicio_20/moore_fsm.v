@@ -16,7 +16,7 @@ module moore_fsm (
         if (rst == 1'b1) begin
             state_reg <= IDLE;
         end else begin
-            state_reh <= state_next;
+            state_reg <= state_next;
         end
     end
     always @(*) begin
@@ -34,6 +34,6 @@ module moore_fsm (
         endcase
     end
 
-    assign der = (state_reg == S101) ? 1'b1 : 1'b0;
+    assign det = (state_reg == S101) ? 1'b1 : 1'b0;
     
 endmodule
